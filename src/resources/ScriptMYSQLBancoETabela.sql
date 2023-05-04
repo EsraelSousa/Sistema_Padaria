@@ -1,0 +1,12 @@
+CREATE DATABASE padaria;
+
+USE padaria;
+
+CREATE TABLE produtos (
+    idProd INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nomeProd VARCHAR(35) NOT NULL,
+    descrição VARCHAR(60) NOT NULL,
+    qtdeProd INT UNSIGNED NOT NULL,
+    valUnitProd DOUBLE UNSIGNED NOT NULL, 
+    ValTotalProd DOUBLE UNSIGNED NOT NULL
+);
